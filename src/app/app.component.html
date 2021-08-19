@@ -1,0 +1,18 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+<div>
+  <fab-default-button label="Fabric [React] Button" (onClick)="toggleDialog()">Fabric [React] Button
+  </fab-default-button>
+  <fab-dialog-content [hidden]="dialogHidden" (onDismiss)="toggleDialog()" title="Fabric [React] Dialog"
+    subText="Use Fabric React components inside your Angular app!" [type]="DialogType.largeHeader">
+    Hello world! {{ counter }}
+    <fab-dialog-footer>
+      <fab-default-button (onClick)="incrementCounter()" label='Save' contentStyle="margin-right:10px;">Save
+      </fab-default-button>
+      <fab-default-button (onClick)="toggleDialog()" label='Cancel'>Cancel</fab-default-button>
+    </fab-dialog-footer>
+  </fab-dialog-content>
+</div>
